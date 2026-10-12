@@ -1,0 +1,20 @@
+{
+  "name": "bot-resenha-insta",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Uma rede social inspirada no Instagram dentro do Discord.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "register-commands": "node src/register-commands.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
+  }
+}
