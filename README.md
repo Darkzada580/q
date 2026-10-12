@@ -4,13 +4,18 @@ Bot de comunidade com uma rede social inspirada no Instagram, funcionando inteir
 
 ## Recursos
 
+- `/criar-conta` e `/editar-perfil`: crie sua conta e personalize seu @usuário e biografia. Os @usuários são exclusivos dentro de cada servidor.
 - `/postar`: publique uma legenda, uma imagem, um vídeo ou uma combinação deles.
-- `/feed`: navegue por publicações recentes, curta ou faça repost usando os botões.
+- `/feed`: navegue por publicações recentes de todo o servidor ou escolha **Seguindo** para ver contas que você segue. Curta, salve e reposte pelos botões.
+- `/explorar` e `/buscar-perfil`: descubra posts populares e encontre contas pelo @usuário.
 - `/curtir`, `/comentar` e `/comentarios`: interaja com os posts pelo número exibido no feed.
 - `/repostar`: compartilhe novamente uma publicação, com legenda opcional.
 - `/perfil`, `/seguir` e `/deixar-de-seguir`: consulte perfis e mantenha sua rede no servidor.
+- `/salvar-post` e `/posts-salvos`: guarde publicações para consultar depois.
 - `/apagar-post`: apague sua publicação; moderadores com **Gerenciar mensagens** também podem remover posts de outros usuários.
 - `/configurar-feed`: escolha o canal público para novas publicações. Sem configuração, o bot usa o canal em que `/postar` ou `/repostar` foi executado.
+
+Crie sua conta com `/criar-conta` antes de postar ou usar as interações sociais. Contas, publicações e seguidores são independentes em cada servidor.
 
 ## Instalação
 
@@ -32,6 +37,8 @@ Requisitos: Node.js 20 ou superior e uma aplicação/bot criado no [Discord Deve
    ```
 
 O bot precisa da permissão **Gerenciar servidor** para executar `/configurar-feed`. Sem um canal configurado, ele publica no canal do comando. As permissões para visualizar e publicar também precisam estar liberadas para o bot nesse canal.
+
+Depois de adicionar ou alterar comandos, execute novamente `npm run register-commands` e faça um novo deploy para que o Discord atualize a lista de comandos.
 
 ## Dados e testes
 
